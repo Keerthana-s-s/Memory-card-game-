@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🃏 Memory Card Game</h1>
+
+    <div id="player-section">
+        <input type="text" id="playerName" placeholder="Enter your name">
+        <button id="startBtn">Start Game</button>
+    </div>
+
+    <div id="cooldown-message" class="hidden">
+        Please wait <span id="cooldown-timer">60</span> seconds before playing again.
+    </div>
+
+    <div id="game-info" class="hidden">
+        <p>Level: <span id="levelDisplay">1</span></p>
+        <p>Attempts Left: <span id="attemptsLeft">3</span></p>
+        <p>Score: <span id="score">0</span></p>
+        <p>Time Left: <span id="timer">0</span> sec</p>
+    </div>
+    <!-- add under Start Game line -->
+    <div id="controls" class="hidden">
+    <button id="stopBtn">Stop & Save</button>
+    <label>
+        Leaderboard Level:
+        <select id="lbLevel"></select>
+    </label>
+    </div>
+
+
+    <div id="game-board" class="hidden"></div>
+
+    <div id="leaderboard">
+        <h2>🏆 Leaderboard</h2>
+        <ul id="leaderboardList"></ul>
+    </div>
+<script src="script.js"></script>
+
+    
+</body>
+
+
+
+</html>
